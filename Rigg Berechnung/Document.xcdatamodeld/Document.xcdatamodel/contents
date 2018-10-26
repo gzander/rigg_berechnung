@@ -1,4 +1,88 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14315.18" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Boom" representedClassName="Boom" syncable="YES" codeGenerationType="class">
+        <attribute name="creation" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="specification" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="rigg" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Rigg" inverseName="boom" inverseEntity="Rigg" syncable="YES"/>
+        <relationship name="spardimensions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SparDimension" inverseName="boom" inverseEntity="SparDimension" syncable="YES"/>
+    </entity>
+    <entity name="Hull" representedClassName="Hull" syncable="YES" codeGenerationType="class">
+        <attribute name="creation" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="hasdoublelowershrouds" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hasrunners" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hasuppershrouds" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="power_rm" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="specification" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="lines" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Line" inverseName="hull" inverseEntity="Line" syncable="YES"/>
+        <relationship name="pnt_ae" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" syncable="YES"/>
+        <relationship name="pnt_bs" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" syncable="YES"/>
+        <relationship name="pnt_d1_bw" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" syncable="YES"/>
+        <relationship name="pnt_d1_fw" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" syncable="YES"/>
+        <relationship name="pnt_mast" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" syncable="YES"/>
+        <relationship name="pnt_v1" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" syncable="YES"/>
+        <relationship name="pnt_vo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" syncable="YES"/>
+        <relationship name="rigg" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Rigg" inverseName="hull" inverseEntity="Rigg" syncable="YES"/>
+    </entity>
+    <entity name="Line" representedClassName="Line" syncable="YES" codeGenerationType="class">
+        <relationship name="hull" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Hull" inverseName="lines" inverseEntity="Hull" syncable="YES"/>
+        <relationship name="points" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" inverseName="line" inverseEntity="Point" syncable="YES"/>
+    </entity>
+    <entity name="Mast" representedClassName="Mast" syncable="YES" codeGenerationType="class">
+        <relationship name="rigg" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Rigg" inverseName="mast" inverseEntity="Rigg" syncable="YES"/>
+        <relationship name="sparDimension" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SparDimension" inverseName="mast" inverseEntity="SparDimension" syncable="YES"/>
+    </entity>
+    <entity name="Point" representedClassName="Point" syncable="YES" codeGenerationType="class">
+        <attribute name="x" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="y" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="z" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="hull" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hull" syncable="YES"/>
+        <relationship name="line" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Line" inverseName="points" inverseEntity="Line" syncable="YES"/>
+    </entity>
+    <entity name="Rigg" representedClassName="Rigg" syncable="YES" codeGenerationType="class">
+        <attribute name="angel_alpha_i" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="creation" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="dim_a_1" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dim_a_2" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dim_a_3" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dim_bd" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dim_d1" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dim_d2" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dim_e" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dim_e_max" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dim_e_max_height" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dim_h" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dim_i" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dim_jb_arm" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dim_jb_breite" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dim_o_k" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dim_p" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dim_s_1" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dim_s_2" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hasdiamond" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hasdoublelowershrouds" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hasjumpbock" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="hasrunners" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="percent_reef" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="specification" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="spreadercount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="boom" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Boom" inverseName="rigg" inverseEntity="Boom" syncable="YES"/>
+        <relationship name="hull" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Hull" inverseName="rigg" inverseEntity="Hull" syncable="YES"/>
+        <relationship name="mast" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Mast" inverseName="rigg" inverseEntity="Mast" syncable="YES"/>
+    </entity>
+    <entity name="SparDimension" representedClassName="SparDimension" syncable="YES" codeGenerationType="class">
+        <attribute name="depth" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="length" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="wide" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="boom" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Boom" inverseName="spardimensions" inverseEntity="Boom" syncable="YES"/>
+        <relationship name="mast" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Mast" inverseName="sparDimension" inverseEntity="Mast" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Point" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="Line" positionX="-54" positionY="18" width="128" height="75"/>
+        <element name="Rigg" positionX="-36" positionY="45" width="128" height="480"/>
+        <element name="Boom" positionX="-27" positionY="162" width="128" height="105"/>
+        <element name="Hull" positionX="-18" positionY="171" width="128" height="270"/>
+        <element name="SparDimension" positionX="0" positionY="180" width="128" height="120"/>
+        <element name="Mast" positionX="18" positionY="189" width="128" height="75"/>
+    </elements>
 </model>
