@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F506637F2183984F00DE2E84 /* Rigg+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F506637E2183984F00DE2E84 /* Rigg+CoreDataProperties.m */; };
 		F54CFE0E2181C48C00C1A305 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F54CFE0D2181C48C00C1A305 /* AppDelegate.m */; };
 		F54CFE112181C48C00C1A305 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = F54CFE102181C48C00C1A305 /* Document.m */; };
 		F54CFE142181C48C00C1A305 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54CFE122181C48C00C1A305 /* Document.xib */; };
@@ -15,12 +14,12 @@
 		F54CFE192181C48E00C1A305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54CFE182181C48E00C1A305 /* Assets.xcassets */; };
 		F54CFE1C2181C48E00C1A305 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54CFE1A2181C48E00C1A305 /* MainMenu.xib */; };
 		F54CFE1F2181C48E00C1A305 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F54CFE1E2181C48E00C1A305 /* main.m */; };
+		F595AB8D21839CE100404A13 /* Rigg+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = F595AB8B21839CE100404A13 /* Rigg+CoreDataClass.m */; };
+		F595AB8E21839CE100404A13 /* Rigg+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F595AB8C21839CE100404A13 /* Rigg+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F506637A2183921F00DE2E84 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Document.strings; sourceTree = "<group>"; };
-		F506637D2183984F00DE2E84 /* Rigg+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rigg+CoreDataProperties.h"; sourceTree = "<group>"; };
-		F506637E2183984F00DE2E84 /* Rigg+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Rigg+CoreDataProperties.m"; sourceTree = "<group>"; };
 		F54CFE092181C48C00C1A305 /* Rigg Berechnung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rigg Berechnung.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54CFE0C2181C48C00C1A305 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F54CFE0D2181C48C00C1A305 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,6 +32,10 @@
 		F54CFE1D2181C48E00C1A305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F54CFE1E2181C48E00C1A305 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F54CFE202181C48E00C1A305 /* Rigg_Berechnung.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rigg_Berechnung.entitlements; sourceTree = "<group>"; };
+		F595AB8921839CE100404A13 /* Rigg+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rigg+CoreDataProperties.h"; sourceTree = "<group>"; };
+		F595AB8A21839CE100404A13 /* Rigg+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Rigg+CoreDataClass.h"; sourceTree = "<group>"; };
+		F595AB8B21839CE100404A13 /* Rigg+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Rigg+CoreDataClass.m"; sourceTree = "<group>"; };
+		F595AB8C21839CE100404A13 /* Rigg+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Rigg+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +79,10 @@
 				F54CFE1E2181C48E00C1A305 /* main.m */,
 				F54CFE202181C48E00C1A305 /* Rigg_Berechnung.entitlements */,
 				F54CFE152181C48C00C1A305 /* Document.xcdatamodeld */,
-				F506637D2183984F00DE2E84 /* Rigg+CoreDataProperties.h */,
-				F506637E2183984F00DE2E84 /* Rigg+CoreDataProperties.m */,
+				F595AB8921839CE100404A13 /* Rigg+CoreDataProperties.h */,
+				F595AB8C21839CE100404A13 /* Rigg+CoreDataProperties.m */,
+				F595AB8A21839CE100404A13 /* Rigg+CoreDataClass.h */,
+				F595AB8B21839CE100404A13 /* Rigg+CoreDataClass.m */,
 			);
 			path = "Rigg Berechnung";
 			sourceTree = "<group>";
@@ -152,10 +157,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F506637F2183984F00DE2E84 /* Rigg+CoreDataProperties.m in Sources */,
 				F54CFE172181C48C00C1A305 /* Document.xcdatamodeld in Sources */,
+				F595AB8D21839CE100404A13 /* Rigg+CoreDataClass.m in Sources */,
 				F54CFE112181C48C00C1A305 /* Document.m in Sources */,
 				F54CFE1F2181C48E00C1A305 /* main.m in Sources */,
+				F595AB8E21839CE100404A13 /* Rigg+CoreDataProperties.m in Sources */,
 				F54CFE0E2181C48C00C1A305 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,7 +245,6 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SYMROOT = "~/build/RiggBerechnung";
 			};
 			name = Debug;
 		};
@@ -292,7 +297,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				SYMROOT = "~/build/RiggBerechnung";
 			};
 			name = Release;
 		};
