@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F54CFE0E2181C48C00C1A305 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F54CFE0D2181C48C00C1A305 /* AppDelegate.m */; };
+		F54CFE112181C48C00C1A305 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = F54CFE102181C48C00C1A305 /* Document.m */; };
+		F54CFE142181C48C00C1A305 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54CFE122181C48C00C1A305 /* Document.xib */; };
+		F54CFE172181C48C00C1A305 /* Document.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F54CFE152181C48C00C1A305 /* Document.xcdatamodeld */; };
+		F54CFE192181C48E00C1A305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54CFE182181C48E00C1A305 /* Assets.xcassets */; };
+		F54CFE1C2181C48E00C1A305 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F54CFE1A2181C48E00C1A305 /* MainMenu.xib */; };
+		F54CFE1F2181C48E00C1A305 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F54CFE1E2181C48E00C1A305 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F54CFE092181C48C00C1A305 /* Rigg Berechnung.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rigg Berechnung.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F54CFE0C2181C48C00C1A305 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F54CFE0D2181C48C00C1A305 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F54CFE0F2181C48C00C1A305 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		F54CFE102181C48C00C1A305 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		F54CFE132181C48C00C1A305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Document.xib; sourceTree = "<group>"; };
+		F54CFE162181C48C00C1A305 /* Document.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Document.xcdatamodel; sourceTree = "<group>"; };
+		F54CFE182181C48E00C1A305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F54CFE1B2181C48E00C1A305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F54CFE1D2181C48E00C1A305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F54CFE1E2181C48E00C1A305 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F54CFE202181C48E00C1A305 /* Rigg_Berechnung.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rigg_Berechnung.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F54CFE062181C48C00C1A305 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F54CFE002181C48C00C1A305 = {
+			isa = PBXGroup;
+			children = (
+				F54CFE0B2181C48C00C1A305 /* Rigg Berechnung */,
+				F54CFE0A2181C48C00C1A305 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F54CFE0A2181C48C00C1A305 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F54CFE092181C48C00C1A305 /* Rigg Berechnung.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F54CFE0B2181C48C00C1A305 /* Rigg Berechnung */ = {
+			isa = PBXGroup;
+			children = (
+				F54CFE0C2181C48C00C1A305 /* AppDelegate.h */,
+				F54CFE0D2181C48C00C1A305 /* AppDelegate.m */,
+				F54CFE0F2181C48C00C1A305 /* Document.h */,
+				F54CFE102181C48C00C1A305 /* Document.m */,
+				F54CFE122181C48C00C1A305 /* Document.xib */,
+				F54CFE182181C48E00C1A305 /* Assets.xcassets */,
+				F54CFE1A2181C48E00C1A305 /* MainMenu.xib */,
+				F54CFE1D2181C48E00C1A305 /* Info.plist */,
+				F54CFE1E2181C48E00C1A305 /* main.m */,
+				F54CFE202181C48E00C1A305 /* Rigg_Berechnung.entitlements */,
+				F54CFE152181C48C00C1A305 /* Document.xcdatamodeld */,
+			);
+			path = "Rigg Berechnung";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F54CFE082181C48C00C1A305 /* Rigg Berechnung */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F54CFE232181C48E00C1A305 /* Build configuration list for PBXNativeTarget "Rigg Berechnung" */;
+			buildPhases = (
+				F54CFE052181C48C00C1A305 /* Sources */,
+				F54CFE062181C48C00C1A305 /* Frameworks */,
+				F54CFE072181C48C00C1A305 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rigg Berechnung";
+			productName = "Rigg Berechnung";
+			productReference = F54CFE092181C48C00C1A305 /* Rigg Berechnung.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F54CFE012181C48C00C1A305 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Gregor;
+				TargetAttributes = {
+					F54CFE082181C48C00C1A305 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = F54CFE042181C48C00C1A305 /* Build configuration list for PBXProject "Rigg Berechnung" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F54CFE002181C48C00C1A305;
+			productRefGroup = F54CFE0A2181C48C00C1A305 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F54CFE082181C48C00C1A305 /* Rigg Berechnung */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F54CFE072181C48C00C1A305 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54CFE192181C48E00C1A305 /* Assets.xcassets in Resources */,
+				F54CFE142181C48C00C1A305 /* Document.xib in Resources */,
+				F54CFE1C2181C48E00C1A305 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F54CFE052181C48C00C1A305 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F54CFE172181C48C00C1A305 /* Document.xcdatamodeld in Sources */,
+				F54CFE112181C48C00C1A305 /* Document.m in Sources */,
+				F54CFE1F2181C48E00C1A305 /* main.m in Sources */,
+				F54CFE0E2181C48C00C1A305 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F54CFE122181C48C00C1A305 /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F54CFE132181C48C00C1A305 /* Base */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		F54CFE1A2181C48E00C1A305 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F54CFE1B2181C48E00C1A305 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F54CFE212181C48E00C1A305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F54CFE222181C48E00C1A305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F54CFE242181C48E00C1A305 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Rigg Berechnung/Rigg_Berechnung.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Rigg Berechnung/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gregor.Rigg-Berechnung";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F54CFE252181C48E00C1A305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Rigg Berechnung/Rigg_Berechnung.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Rigg Berechnung/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gregor.Rigg-Berechnung";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F54CFE042181C48C00C1A305 /* Build configuration list for PBXProject "Rigg Berechnung" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F54CFE212181C48E00C1A305 /* Debug */,
+				F54CFE222181C48E00C1A305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F54CFE232181C48E00C1A305 /* Build configuration list for PBXNativeTarget "Rigg Berechnung" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F54CFE242181C48E00C1A305 /* Debug */,
+				F54CFE252181C48E00C1A305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F54CFE152181C48C00C1A305 /* Document.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F54CFE162181C48C00C1A305 /* Document.xcdatamodel */,
+			);
+			currentVersion = F54CFE162181C48C00C1A305 /* Document.xcdatamodel */;
+			path = Document.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F54CFE012181C48C00C1A305 /* Project object */;
+}
