@@ -1,0 +1,54 @@
+
+/* Class = "NSMenuItem"; title = "Item 1"; ObjectID = "3SV-aB-EFW"; */
+"3SV-aB-EFW.title" = "Item 1";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "4tK-qI-nry"; */
+"4tK-qI-nry.title" = "Table View Cell";
+
+/* Class = "NSTextFieldCell"; title = "Reff percentage:"; ObjectID = "Dh5-tS-cSx"; */
+"Dh5-tS-cSx.title" = "Reff percentage:";
+
+/* Class = "NSTextFieldCell"; title = "Hight:"; ObjectID = "Iq2-Us-O9b"; */
+"Iq2-Us-O9b.title" = "Hight:";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "Ls2-yd-17Z"; */
+"Ls2-yd-17Z.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "Remove"; ObjectID = "M2P-aI-yDm"; */
+"M2P-aI-yDm.title" = "Remove";
+
+/* Class = "NSTextFieldCell"; title = "Rigg Type:"; ObjectID = "O5X-S9-NbE"; */
+"O5X-S9-NbE.title" = "Rigg Type:";
+
+/* Class = "NSTableColumn"; headerCell.title = "Created"; ObjectID = "Qyy-MO-tUQ"; */
+"Qyy-MO-tUQ.headerCell.title" = "Created";
+
+/* Class = "NSTextFieldCell"; title = "Righting moment (RM 30):"; ObjectID = "Tr2-1h-atp"; */
+"Tr2-1h-atp.title" = "Righting moment (RM 30):";
+
+/* Class = "NSButtonCell"; title = "Add"; ObjectID = "WDN-ZI-dJc"; */
+"WDN-ZI-dJc.title" = "Add";
+
+/* Class = "NSMenuItem"; title = "Item 3"; ObjectID = "dG0-24-m2V"; */
+"dG0-24-m2V.title" = "Item 3";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "etg-pt-2b9"; */
+"etg-pt-2b9.title" = "Text Cell";
+
+/* Class = "NSMenuItem"; title = "Item 2"; ObjectID = "hdc-UD-GaG"; */
+"hdc-UD-GaG.title" = "Item 2";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "s5g-gs-L9n"; */
+"s5g-gs-L9n.title" = "Table View Cell";
+
+/* Class = "NSTableColumn"; headerCell.title = "Calculation"; ObjectID = "tXV-XR-Vm3"; */
+"tXV-XR-Vm3.headerCell.title" = "Calculation";
+
+/* Class = "NSTextFieldCell"; title = "Label"; ObjectID = "uQk-MX-Rmv"; */
+"uQk-MX-Rmv.title" = "Label";
+
+/* Class = "NSBox"; title = "Reff"; ObjectID = "xCk-9N-w4N"; */
+"xCk-9N-w4N.title" = "Reff";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "xOd-HO-29H"; */
+"xOd-HO-29H.title" = "Window";

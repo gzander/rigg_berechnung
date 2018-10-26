@@ -14,31 +14,31 @@
         <attribute name="power_rm" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="specification" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="lines" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Line" inverseName="hull" inverseEntity="Line" syncable="YES"/>
-        <relationship name="pnt_ae" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" syncable="YES"/>
-        <relationship name="pnt_bs" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" syncable="YES"/>
-        <relationship name="pnt_d1_bw" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" syncable="YES"/>
-        <relationship name="pnt_d1_fw" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" syncable="YES"/>
-        <relationship name="pnt_mast" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" syncable="YES"/>
-        <relationship name="pnt_v1" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" syncable="YES"/>
-        <relationship name="pnt_vo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" syncable="YES"/>
+        <relationship name="pnt_ae" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RBPoint" syncable="YES"/>
+        <relationship name="pnt_bs" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RBPoint" syncable="YES"/>
+        <relationship name="pnt_d1_bw" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RBPoint" syncable="YES"/>
+        <relationship name="pnt_d1_fw" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RBPoint" syncable="YES"/>
+        <relationship name="pnt_mast" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RBPoint" syncable="YES"/>
+        <relationship name="pnt_v1" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RBPoint" syncable="YES"/>
+        <relationship name="pnt_vo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RBPoint" syncable="YES"/>
         <relationship name="rigg" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Rigg" inverseName="hull" inverseEntity="Rigg" syncable="YES"/>
     </entity>
     <entity name="Line" representedClassName="Line" syncable="YES" codeGenerationType="class">
         <relationship name="hull" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Hull" inverseName="lines" inverseEntity="Hull" syncable="YES"/>
-        <relationship name="points" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Point" inverseName="line" inverseEntity="Point" syncable="YES"/>
+        <relationship name="points" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="RBPoint" inverseName="line" inverseEntity="RBPoint" syncable="YES"/>
     </entity>
     <entity name="Mast" representedClassName="Mast" syncable="YES" codeGenerationType="class">
         <relationship name="rigg" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Rigg" inverseName="mast" inverseEntity="Rigg" syncable="YES"/>
         <relationship name="sparDimension" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SparDimension" inverseName="mast" inverseEntity="SparDimension" syncable="YES"/>
     </entity>
-    <entity name="Point" representedClassName="Point" syncable="YES" codeGenerationType="class">
+    <entity name="RBPoint" representedClassName="RBPoint" syncable="YES" codeGenerationType="class">
         <attribute name="x" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="y" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="z" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <relationship name="hull" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hull" syncable="YES"/>
         <relationship name="line" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Line" inverseName="points" inverseEntity="Line" syncable="YES"/>
     </entity>
-    <entity name="Rigg" representedClassName="Rigg" syncable="YES" codeGenerationType="class">
+    <entity name="Rigg" representedClassName="Rigg" syncable="YES">
         <attribute name="angel_alpha_i" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="creation" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="dim_a_1" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
@@ -77,12 +77,12 @@
         <relationship name="mast" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Mast" inverseName="sparDimension" inverseEntity="Mast" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Point" positionX="-63" positionY="-18" width="128" height="120"/>
-        <element name="Line" positionX="-54" positionY="18" width="128" height="75"/>
-        <element name="Rigg" positionX="-36" positionY="45" width="128" height="480"/>
         <element name="Boom" positionX="-27" positionY="162" width="128" height="105"/>
         <element name="Hull" positionX="-18" positionY="171" width="128" height="270"/>
-        <element name="SparDimension" positionX="0" positionY="180" width="128" height="120"/>
+        <element name="Line" positionX="-54" positionY="18" width="128" height="75"/>
         <element name="Mast" positionX="18" positionY="189" width="128" height="75"/>
+        <element name="RBPoint" positionX="-63" positionY="-18" width="128" height="120"/>
+        <element name="Rigg" positionX="-36" positionY="45" width="128" height="480"/>
+        <element name="SparDimension" positionX="0" positionY="180" width="128" height="120"/>
     </elements>
 </model>
